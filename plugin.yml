@@ -1,0 +1,48 @@
+name: DynCap
+version: 1.0.1
+main: com.untamedears.DynCap.DynCapPlugin
+author: Exultant
+commands:
+  setcap:
+    description: Sets the player cap
+    usage: /setcap <Max Players>
+    permission: dyncap.console
+  getcap:
+    description: Displays the current player cap
+    usage: /getcap
+    permission: dyncap.console
+  getqueuesize:
+    description: Displays the current player queue size
+    usage: /getqueuesize
+    aliases: gqs
+  reloadqueue:
+    description: Reload the config.yml of dyncap
+    usage: /reloadQueue
+    permission: dyncap.console
+  getqueueinfo:
+    description: Displays information about the supplied queue item.
+    usage: /getqueueinfo <start index or player name> optional if first paramter is a index <end index>
+    aliases: gqi
+    permission: dyncap.debug.getqueueinfo
+  getjoinaverage:
+    description: Gets the average amount of time spent in the login queue, before joining.
+    usage: /getjoinaverage
+    aliases: gja
+    permission: dyncap.console
+  resetjoinaverage:
+    description: Resets the average amount of time
+    usage: /resetjoinaverage
+    aliases: rja
+    permission: dyncap.console
+permissions:
+  dyncap.console:
+    description: Console commands for DynCap
+    default: false
+    children:
+      dyncap.debug.getqueueinfo: true
+  dyncap.debug:
+    description: Debug commands for DynCap
+    default: false
+  dyncap.debug.getqueueinfo:
+    description: Get queue info command for DynCap
+    default: false
