@@ -106,7 +106,7 @@ public class DynCapPlugin extends JavaPlugin implements Listener {
 			return loginQueue.get(queueIndex);
 		}
 	}
-			
+		
 	@EventHandler(priority=EventPriority.LOWEST, ignoreCancelled = false)
 	public void onAsyncPlayerPreLoginEvent(AsyncPlayerPreLoginEvent event) 
 	{
@@ -119,11 +119,6 @@ public class DynCapPlugin extends JavaPlugin implements Listener {
 			if (whiteListedPlayers.contains(playerName))
 			{
 				event.allow();
-				return;
-			}
-			if(this.getServer().getBannedPlayers().contains(this.getServer().getOfflinePlayer(event.getName())))
-			{
-				event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_BANNED, banMessage);
 				return;
 			}
 			

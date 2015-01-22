@@ -1,5 +1,5 @@
 name: DynCap
-version: 1.0.1
+version: 1.0.2
 main: com.untamedears.DynCap.DynCapPlugin
 author: Exultant
 commands:
