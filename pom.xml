@@ -4,7 +4,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.untamedears.DynCap</groupId>
-  <artifactId>Citadel</artifactId>
+  <artifactId>Dyncap</artifactId>
   <packaging>jar</packaging>
   <version>1.0.2-${build.number}</version>
   <name>DynCap</name>
