@@ -87,7 +87,7 @@ public class DynCapPlugin extends JavaPlugin implements Listener {
 	}
 
 	public int getPlayerCount() {
-		return this.getServer().getOnlinePlayers().length;
+		return this.getServer().getOnlinePlayers().size();
 	}
 	
 	public int getQueueSize()
