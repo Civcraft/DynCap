@@ -1,0 +1,42 @@
+#	firstJoin is the message that gets sent to a client, if it tries to connect when the server has a login queue.
+#	%d is the queue position. Remember to include %d somewhere in the string, but only once, otherwise errors will occur.
+#
+#	toFastJoin is the message that gets sent to a client, if the client joins before minimumjointime has elapsed. 
+#	there is no %d in this strng. Only text.
+#
+#	updateMessage is the message that gets sent to a client, when it connects after having being added to the queue.
+#	%d is the queue position. Remember to include %d somewhere in the string, but only once, otherwise errors will occur.
+#
+#	BanMessage is the message that gets sent to a client if the client is on the ban list.
+#	there is no %d in this strng. Only text.
+messages:
+  firstJoin: The server is full, you have been added to the login queue. Your current position is %d. Please try again in no less than 10 seconds, and no more than 60 seconds.
+  toFastJoin: You rejoined way to quick, you have been moved to the end of the login queue. Next time please join no less than every 10 seconds.
+  updateMessage: Your position in the queue is %d. Please try again in no less than 10 seconds, and no more than 60 seconds.
+  banMessage: You are banned. If you believe this is a mistake, message modmail at www.reddit.com/r/civcraft
+# all timers are in seconds.
+timers:
+  #
+  # minimumJoinTime is the amount of time that must at least elapse, before a player tries to rejoin.
+  # If minimumJoinTime has not elapsed before they rejoin, they get removed from the login queue.
+  #
+  minimumJoinTime: 5
+  #
+  # timeOutTime is the amount of time that can elapse, since a player last tried to join the server,
+  # before they are removed from the login queue.
+  #
+  timeOutTime: 60
+other:
+  initialDynCap: 175
+#
+# whiteListedPlayers: a list of players that can join imediatetly, even if there is a login queue.
+# Even though case is ignored in the code. Ie would recomend getting the case right.
+# Because of config files being weird there needs to be something after the colon.
+# However the right side of the colon is never read, so just make it something like the username again.
+#
+whiteListedPlayers:
+  ttk2: ttk2
+  hammond_of_texas: hammond_of_texas
+  ariehkovler: ariehkovler
+  spock_bot: spock_bot
+  orthzar: orthzar
