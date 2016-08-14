@@ -1,7 +1,7 @@
 #	firstJoin is the message that gets sent to a client, if it tries to connect when the server has a login queue.
 #	%d is the queue position. Remember to include %d somewhere in the string, but only once, otherwise errors will occur.
 #
-#	toFastJoin is the message that gets sent to a client, if the client joins before minimumjointime has elapsed. 
+#	toFastJoin is the message that gets sent to a client, if the client joins before minimumjointime has elapsed.
 #	there is no %d in this strng. Only text.
 #
 #	updateMessage is the message that gets sent to a client, when it connects after having being added to the queue.
