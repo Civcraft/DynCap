@@ -1,6 +1,6 @@
-name: DynCap
-version: 1.0.2
-main: com.untamedears.DynCap.DynCapPlugin
+name: ${name}
+main: ${groupId}.${name}Plugin
+version: ${version}
 author: Exultant
 commands:
   setcap:
